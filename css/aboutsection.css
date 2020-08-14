@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+body{
+	margin:0px;
+	padding:0px;
+	
+	
+}
+
+.nav-bgdark {
+    background-color: orangered;
+    transition: background-color 200ms linear;
+    box-shadow: 4px 0 20px -5px rgba(0,0,0,.6);
+}
+.navarea {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+}
+.nav-item a {
+    color: rgb(7, 6, 6);
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+.navbar2 .nav-item a {
+    opacity: 0.6;
+    transition: all;
+    transition-duration: 0.1s;
+    margin-right: 15px;
+}
+.navbar2 .nav-item a:hover {
+    opacity: 1;
+}
+.navbar2 .active > .nav-link {
+    opacity: 1;
+}
+.navbar-light .navbar-toggler {
+    font-size: medium;
+}
+.hero-image {
+    background-image: url(../img/bg-hero.jpg);
+    min-height: 900px;
+    margin: 0 auto;
+    padding: 70px 30px 70px 30px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+	
+}
+#rel {
+	width: 100%;
+	position: relative;
+	top: 150px;
+	right: 100px;
+	border: 1px solid black;
+	padding: 20px;
+}
+#relative {
+		border: 1px solid black;
+		padding: 20px;
+	}
+.row li:hover div {
+		animation: twirl 0.5s ease-out forwards reverse ;
+	
+  }
+  .row div {
+	animation: twirl 0.5s ease-out forwards reverse ;
+	
+
+  }
+.jumbotron.aboutT{
+	background-image: url("https://img.archiexpo.com/images_ae/projects/images-og/this-apartment-kiev-kyiv-is-work-dzhemesyuk-yurov-design-preventing-dark-materials-from-absorbing-all-available-light-is-one-most-difficult-parts-working-such-subdued-palette-but-this-home-10984-9440973.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-top: 70px;
+	min-height: 400px;
+	opacity: .98 ;
+}
+.jumbtext {
+	padding: 0px;
+	margin: 0px;
+	
+	
+}
+h2 {
+	display: block;
+	text-align: center;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	
+	font-size: 50px;
+	
+
+}
+a.navbar-brand {
+    color: black;
+    text-shadow: black 1px 1px 1px;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+h2 , h1  {
+	animation-name: fashionabout;
+	animation-duration: 2s;
+	
+	animation-fill-mode: both;
+}
+
+@keyframes fashionabout {
+	from { transform: translateX(-400px); }
+	to { transform: translateX(5px); }
+}
+
+.containers {
+	background-image: url(../img/bg-hero.jpg);
+    min-height: 700px;
+    margin: 0 auto;
+    padding: 70px 30px 70px 30px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+ @keyframes twirl { 
+	0% { transform: rotateY(0deg); }
+	100% { transform: rotateY(90deg); }
+ } 
+
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+
+
+@media (max-width: 768px){
+    .nav-item a {
+        font-size: 12px;
+    }
+
+    
+}
+@media (max-width: 345px){
+    .nav-item a {
+        font-size: 8px;
+    }
+
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+}
+
+
+
+
+.design{
+
+	font-weight: bold;
+	font-style: oblique;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+	letter-spacing: 2px;
+	text-align: center;
+
+}
+
+
+@media (max-width:720px){
+	
+
+	#rel  {
+		width: 100%;
+		position: relative;
+		right: 30px;
+		top: 40px;
+		border: 1px solid black;
+		padding: 20px; }
+	.jumbtext h1 {
+			font-family: 'Libre Baskerville', serif;
+			font-weight: bold;
+			font-size: 50px;
+			color: white;
+}
+}
+.footer {
+    align-content: center;
+    padding: 20px 0px;
+    background-color: rgb(26, 25, 25);
+}
+.footer  h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.foottitle {
+    padding-bottom: 6px;
+    border-bottom: 3px solid gray;
+    transition: ease all 300ms ;
+}
+.col-sm-4:hover .foottitle{
+    border-bottom: 3px solid orangered;
+}
+.col-sm-3:hover .foottitle{
+    border-bottom: 3px solid orangered;
+}
+.footer  ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.footer ul li {
+    margin-top: 7px;
+}
+.footer ul li a{
+    font-size: 16px;
+    color: gray !important;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all  300ms;
+}
+.footer ul li a:hover {
+    color: white !important;
+}
+.footer ul.social-media li a i{
+    transition-property: all;
+    transition: all 600ms;
+}
+.footer ul.social-media li a i:hover {
+    color: white !important;
+    transform: rotate(360deg);
+    background-color: orangered;
+    border-radius: 100%;
+    padding: 4px;
+}
+.footercontent {
+    font-size: 16px;
+    color: gray !important;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.credit-line {
+    color: white;
+    font-weight: 600;
+} 
